@@ -16,10 +16,10 @@ const interval = setInterval(() => {
     const seconds = Math.floor((diff / 1000) % 60);
 
     countdown.innerHTML = `
-    <div>${days}</div>
-    <div>${hours}</div>
-    <div>${minutes}</div>
-    <div>${seconds}</div>
+    <div data-content="Days">${days}</div>
+    <div data-content="Hours">${hours}</div>
+    <div data-content="Minutes">${minutes}</div>
+    <div data-content="Seconds">${seconds}</div>
     `;
 }, 1000);
 
