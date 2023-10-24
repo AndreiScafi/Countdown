@@ -31,6 +31,17 @@ const interval = setInterval(() => {
     }
 }, 1000);
 
+reset.addEventListener('click', () => {
+    clearInterval(interval);
+
+    const divs = document.querySelectorAll('.countdown div');
+
+    divs.forEach(div => {
+        div.innerHTML = "00"
+    })
+
+})
+
 
 
 
